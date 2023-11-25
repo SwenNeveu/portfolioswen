@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lilita+One&display=swap');
+
 
 :root{
     /* COLOR */
@@ -22,6 +26,7 @@
 }
 body{
     font-family: 'Poppins';
+    background-image: url("../image/background-image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -62,6 +67,16 @@ body{
 .nav-links ul li a:hover{
     color: var(--color-hover-links);
     cursor: pointer;
+}
+.menu-hamburger{
+    position: absolute;
+    width: 27px;
+    height: 25px;
+    top: 1.7em;
+    right: 2em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .bar-menu{
     width: 100%;
@@ -152,17 +167,83 @@ body{
 /* BODY */
  
 /* Acceuil */
-.h1-acceuil{
-    color: #777; /* Couleur grise */
-    font-family: 'Roboto', sans-serif; /* Choisissez une police futuriste ou moderne */
-    font-size: 2em; /* Taille de police, ajustez selon vos besoins */
-    letter-spacing: 2px; /* Espacement entre les lettres pour un look moderne */
+.acceuil-section{
+    display:flex; 
+    margin: auto; 
+    width: 100%;
+}
+
+.acceuil-container{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.imghome{
+    width: 35%;
+    object-fit:cover;
+    vertical-align: middle;
+}
+
+.acceuil-titre{
+    color: #777;
+    font-family: 'Marhey', sans-serif; /* Choisissez une police futuriste ou moderne */
+    font-size: 4.5em; /* Taille de police, ajustez selon vos besoins */
+    letter-spacing: 3px; /* Espacement entre les lettres pour un look moderne */
     text-transform: uppercase; /* Convertit le texte en majuscules pour un aspect stylisé */
     text-align: center; /* Centre le texte horizontalement */
-    margin: 20px 0; /* Ajoute une marge en haut et en bas pour l'aération */
-    /* Autres propriétés de style que vous pouvez ajuster selon vos préférences */
+    margin: 20px 0;
 }
+/* A propos */
+
+.à-propos-section{
+    margin: auto;
+    width: 100%;
 }
+
+.à-propos-presentation{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.presentation-titre{
+    font-family: 'Lilita One'; /* Choisissez une police futuriste ou moderne */
+    font-size: 4.5em; /* Taille de police, ajustez selon vos besoins */
+    letter-spacing: 3px; /* Espacement entre les lettres pour un look moderne */
+    text-transform: uppercase; /* Convertit le texte en majuscules pour un aspect stylisé */
+    text-align: center; /* Centre le texte horizontalement */
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.presentation-p{
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+    letter-spacing: 0.5px;
+    font-family: 'Archivo Black';
+    color: #3c3b3b;
+}
+
+.à-propos-diplomes{
+    display: flex;
+}
+
+.diplome-titre{
+    font-family: 'Lilita One'; /* Choisissez une police futuriste ou moderne */
+    font-size: 3.5em; /* Taille de police, ajustez selon vos besoins */
+    letter-spacing: 3px; /* Espacement entre les lettres pour un look moderne */
+    text-transform: uppercase; /* Convertit le texte en majuscules pour un aspect stylisé */
+    text-align: center; /* Centre le texte horizontalement */
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
 
 /* RESPONSIVE */
 @media screen and (max-width:950px) {
